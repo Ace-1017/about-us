@@ -18,30 +18,58 @@
 
     /* Navbar Styles */
     nav {
-      background-color: #3a5dc8;
-      padding: 15px;
+      background-color: royalblue;
+      padding: 10px 20px;
+    }
+
+    .navbar-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
+    /* Navbar Brand */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      font-weight: 600; /* Medium weight */
+      font-size: 1.65em; /* Adjusted size */
+      color: rgb(0, 0, 0);
+      text-decoration: none; /* Removes underline */
     }
 
-    nav a:hover {
-      background-color: #2f4aa2;
+    .navbar-brand img {
+      margin-right: 10px;
+      height: 40px;
+    }
+
+    /* Navbar Links */
+    .navbar-nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar-nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 1em; /* Adjusted font size to match your reference */
+      font-weight: 450; /* Medium weight */
+      padding: 10px 15px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav a:hover {
+      color: royalblue;
+      background-color: #3453b4;
       border-radius: 5px;
     }
 
-    .logo img {
-      height: 40px;
-      width: auto;
+    /* Small white strip under navbar */
+    .navbar-strip {
+      background-color: white;
+      height: 2px;
     }
 
     /* Hero Section */
@@ -101,12 +129,13 @@
     }
 
     /* Footer */
-    footer {
-      background-color: #2f4aa2;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
+    .footer {
+            background-color: royalblue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            font-size: 0.9rem;
     }
 
     footer a {
@@ -120,16 +149,23 @@
 <body>
   <!-- Navbar Section -->
   <nav>
-    <div class="logo">
-      <img src="https://github.com/Ace-1017/BSBAFM2A/blob/main/Picsart_24-11-10_01-32-07-629.png?raw=true" alt="[Institution Name] Logo">
-    </div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="admissions.html">Admissions</a>
-      <a href="contact.html">Contact</a>
+    <div class="navbar-container">
+      <a class="navbar-brand" href="#">
+        <img src="https://github.com/Ace-1017/BSBAFM2A/blob/main/Picsart_24-11-10_01-32-07-629.png?raw=true" alt="Holy Cross College of Calinan Logo">
+        Holy Cross College of Calinan, Inc.
+      </a>
+      <div class="navbar-nav">
+        <a href="index(Front Page).html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#service">Programs</a>
+        <a href="#business-admin">Courses</a>
+        <a href="https://ace-1017.github.io/hcccevents/">Events</a>
+      </div>
     </div>
   </nav>
+
+  <!-- White Strip Below Navbar -->
+  <div class="navbar-strip"></div>
 
   <!-- Hero Section -->
   <div class="hero">
@@ -147,16 +183,18 @@
     <div class="mission">
       <h3>Our History</h3>
       <p>
-        The Holy Cross College of Calinan , formerly named Holy Cross of Calinan was opened by the PME Fathers in June 1948 as an answer to the general public’s repeated and urgent clamor for an institution that could provide their children with a secondary education which was both academic and spiritual. Since then, the school has gradually and continuously grown and expanded in size, enrollment, and in-teaching and non-teaching personnel.
+        The Holy Cross College of Calinan, formerly named Holy Cross of Calinan, was opened by the PME Fathers in June 1948 as an answer to the general public’s repeated and urgent clamor for an institution that could provide their children with a secondary education which was both academic and spiritual. Since then, the school has gradually and continuously grown and expanded in size, enrollment, and in-teaching and non-teaching personnel.
 
-During its first year of operation in 1948, the school had only 59 Freshmen and 36 Sophomores under the charge of three classroom teachers and a principal, housed in just only one building.
+During its first year of operation in 1948, the school had only 59 Freshmen and 36 Sophomores under the charge of three classroom teachers and a principal, housed in just one building.
       </p>
     </div>
   </div>
 
   <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Holy Cross College of Calinan. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
-  </footer>
+  <footer class="footer" id="contact">
+    <p>&copy; 2024 Holy Cross College of Calinan. All rights reserved.</p>
+    <p>Email: <a href="mailto:holycrosscollegeofcalinan@yahoo.com">holycrosscollegeofcalinan@yahoo.com</a> | Mobile: <a href="tel:+639498469372">+639498469372</a> | Fax: 063 82 295-0145</p>
+</footer>
+
 </body>
 </html>
